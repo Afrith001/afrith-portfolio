@@ -107,14 +107,18 @@ section {
   z-index: 10;
 }
 
-/* Name */
 #home h1 {
   font-size: 64px;
   font-weight: 800;
   letter-spacing: 2px;
   background: linear-gradient(90deg, #5ddcff, #c77dff);
+
+  background-clip: text;
   -webkit-background-clip: text;
+
+  color: transparent;                  /* 🔥 this is the fix */
   -webkit-text-fill-color: transparent;
+
   text-shadow: 0 0 30px rgba(100,200,255,0.35);
 }
 
@@ -864,3 +868,4 @@ body.light #contact {
     flex-direction: column;
   }
 }
+
