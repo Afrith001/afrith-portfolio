@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <script src="script.js"></script>
+    <script src="script.js.js"></script>
 
     <header>
         <nav>
@@ -32,8 +32,8 @@
 <div class="orb orb2" data-depth="0.25"></div>
 
 
-  <div class="profile-wrap">
-  <img src="af.png" class="profile-pic">
+  <div class="profile-frame">
+  <img src="af.png" class="profile-img">
 </div>
 
 
@@ -43,11 +43,10 @@
   I design clean, modern and responsive websites with smooth animations and user-friendly layouts.
 </p>
 
-    <a href="afrith_resume.pdf"
-       target="_blank"
-       class="resume-btn fade-in delay-3">
-       View Resume
-    </a>
+   <a href="afrith_resume.pdf" target="_blank" class="resume-btn fade-in delay-3">
+  <span>📄 View Resume</span>
+</a>
+
 </section>
 
 
@@ -60,18 +59,70 @@ I have experience working with HTML, CSS, and JavaScript, and I enjoy creating r
 I am a fresher actively looking to start my career in the IT industry, where I can learn from real-world projects, improve my technical knowledge, and grow into a skilled software or cloud professional. I strongly believe in continuous learning and self-improvement through hands-on practice.</p>
 </section>
 
-    <section id="projects">
-    <h2 class="fade-in">My Project</h2>
-    <div class="project fade-in delay-1">
-        <img src="project.png">
-        <p> This is a web-based Stock Market Prediction project developed to understand how financial data and trend analysis can be integrated into a web application.
+   <section id="projects">
+  <h2 class="fade-in">My Projects</h2>
 
-The system takes historical stock data such as Open price, Close price, High, Low, and Volume and analyzes the data to identify basic market trends. Based on this analysis, the application predicts whether the stock is more likely to move in an upward or downward direction.
+  <div class="projects-grid">
 
-The project is built using HTML, CSS, and JavaScript for the user interface, making it simple and easy to use. It helps users visualize stock behavior and understand how prediction logic can be applied to real-world financial data.
+    <div class="projects-row">
 
-This project was created for learning and academic purposes to gain practical experience in web development and data-driven applications.</p>
+  <!-- Left : Smart Expense Tracker -->
+  <div class="project">
+    <h3>💰 Smart Expense Tracker</h3>
+    <p>
+      A modern expense tracking web app that lets users add income and expenses,
+      categorize spending, filter by month, view charts, and download reports.
+      Built using HTML, CSS and JavaScript.
+    </p>
+
+    <a href="https://afrith001.github.io/smart-expense-tracker/"
+       target="_blank"
+       class="open-btn">
+       🚀 Open Project
+    </a>
+  </div>
+
+  <!-- Right : Stock Market -->
+  <div class="project">
+    <h3>📈 Stock Market Trend Predictor</h3>
+    <p>
+      A web-based stock trend analysis app that studies historical price data
+      (Open, Close, High, Low, Volume) and predicts whether a stock is likely to move
+      up or down. Built using HTML, CSS and JavaScript.
+    </p>
+
+    <a href="https://stock-market-data-da-ako2.bolt.host"
+       target="_blank"
+       class="open-btn">
+       🚀 Open Project
+    </a>
+  </div>
+
+</div>
+
+  <h2 class="fade-in" style="margin-top:80px;">Future Projects</h2>
+
+  <div class="skills-grid fade-in">
+
+    <div class="project">
+      <h3>📊 AI Job Match Portal</h3>
+      <p>
+        A smart job portal that matches user skills with suitable job roles
+        using intelligent filtering and recommendation logic.
+      </p>
+      <span style="color:#ff5fa2;">Coming Soon</span>
     </div>
+
+    <div class="project">
+      <h3>☁ Cloud File Vault</h3>
+      <p>
+        A secure cloud-based file storage system where users can upload,
+        manage and download files safely.
+      </p>
+      <span style="color:#ff5fa2;">In Development</span>
+    </div>
+
+  </div>
 </section>
 
 
@@ -255,8 +306,12 @@ document.addEventListener("mousemove", e => {
   });
 });
 
+function showMoreProjects() {
+  const more = document.getElementById("more-projects");
+  more.style.display = "grid";
+  more.scrollIntoView({ behavior: "smooth" });
+}
 
 
 
 </script>
-
