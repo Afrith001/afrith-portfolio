@@ -859,9 +859,11 @@ body.light #contact {
   justify-content: center;
   align-items: stretch;
   margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .projects-row .project-card {
   flex: 1;
   max-width: 450px;
+
 }
